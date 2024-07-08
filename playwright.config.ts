@@ -25,7 +25,7 @@ const coverageReportOptions: CoverageReportOptions = {
         return fileSource;
     },
 
-    reports: ['v8', 'console-details']
+    reports: ['v8', 'codecov', 'console-details']
 };
 
 // Use process.env.PORT by default and fallback to port 3000
