@@ -19,7 +19,8 @@ module.exports = {
 
     'extends': [
         'plus',
-        'next/core-web-vitals'
+        'next/core-web-vitals',
+        'prettier'
     ],
 
     'parserOptions': {
@@ -29,5 +30,5 @@ module.exports = {
 
     'rules': {
         'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn'
-    }
+    },
 };
