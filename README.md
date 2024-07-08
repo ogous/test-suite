@@ -2,6 +2,8 @@
 
 This example shows how to configure Playwright to work with Next.js.
 
+## Coverage Results [![codecov](https://codecov.io/gh/ogous/test-suite/graph/badge.svg?token=GH99PRXZDJ)](https://codecov.io/gh/ogous/test-suite)
+
 ## Generate Coverage Report
 ```sh
 npm i
