@@ -26,3 +26,15 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+
+    - name: Generate lcov report
+      run: npx playwright show-report --reporter=lcov --output=coverage/lcov.info
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v4.0.1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: ./coverage/lcov.info
+        flags: e2e
+        name: codecov-umbrella
+        fail_ci_if_error: true
