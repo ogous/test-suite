@@ -38,3 +38,4 @@ next-env.d.ts
 /test-results/
 /.v8-coverage
 /jest-coverage
+/playwright-coverage
