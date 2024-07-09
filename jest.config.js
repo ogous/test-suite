@@ -12,6 +12,11 @@ const config = {
     ],
 
     collectCoverage: true,
+    collectCoverageFrom: [
+        'src/**/*.{ts,tsx}',
+    ],
+
+    // The directory where Jest should output its coverage files
     coverageReporters: ['text', 'lcov'],
     coverageDirectory: 'jest-coverage',
 
