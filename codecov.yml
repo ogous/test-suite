@@ -1,0 +1,11 @@
+coverage:
+  status:
+    project:
+      default:
+        target: 80% #default
+        threshold: 0%
+        base: auto
+        if_ci_failed: error
+        branches:
+          - main
+          - dev

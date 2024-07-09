@@ -29,6 +29,6 @@ jobs:
         with:
           fail_ci_if_error: true # optional (default = false)
           flags: unittests # optional
-          name: codecov-umbrella # optional
+          name: codecov-unit # optional
           token: ${{ secrets.CODECOV_TOKEN }} # required
           verbose: true # optional (default = false)

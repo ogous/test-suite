@@ -30,8 +30,7 @@ jobs:
         uses: codecov/codecov-action@v4
         with:
           fail_ci_if_error: true # optional (default = false)
-          files: ./test-results/coverage/codecov.json # optional
           flags: e2e # optional
-          name: codecov-umbrella # optional
+          name: codecov-e2e # optional
           token: ${{ secrets.CODECOV_TOKEN }} # required
           verbose: true # optional (default = false)

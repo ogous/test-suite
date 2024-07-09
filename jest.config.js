@@ -1,6 +1,5 @@
 
-import nextJest from 'next/jest.js';
-
+const nextJest = require('next/jest.js');
 
 const createJestConfig = nextJest({
     dir: './'
@@ -13,7 +12,7 @@ const config = {
     ],
 
     collectCoverage: true,
-    coverageReporters: ['text', 'cobertura'],
+    coverageReporters: ['text', 'lcov'],
     coverageDirectory: 'jest-coverage',
 
     // Indicates which provider should be used to instrument code for coverage
@@ -58,4 +57,4 @@ const config = {
 
 };
 
-export default createJestConfig(config);
+module.exports = createJestConfig(config);
